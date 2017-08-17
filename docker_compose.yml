@@ -1,0 +1,9 @@
+web:
+  image: daocloud.io/library/mysql:latest
+  restart: always
+  ports:
+  - '3306'
+  volumes:
+  - /var/lib/mysql:/var/lib/mysql
+  environment:
+  - VIRTUAL_HOST=db.meedesidy.top
